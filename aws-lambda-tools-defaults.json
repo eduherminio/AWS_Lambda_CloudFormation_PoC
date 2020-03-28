@@ -1,0 +1,17 @@
+﻿{
+  "Information": [
+    "TestLambda"
+  ],
+
+  "profile": "default",
+  "region": "eu-west-3",
+  "configuration": "Release",
+  "framework": "netcoreapp3.0",
+  "template": "serverless.template",
+  "function-name": "TestLambda",
+  "function-memory-size": 128,
+  "function-timeout": 30,
+  "function-runtime": "provided",
+  "function-handler": "not_required_for_custom_runtime",
+  "msbuild-parameters": "--self-contained true"
+}

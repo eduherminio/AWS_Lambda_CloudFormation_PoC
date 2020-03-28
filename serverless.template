@@ -1,0 +1,20 @@
+﻿{
+  "AWSTemplateFormatVersion": "2010-09-09",
+  "Transform": "AWS::Serverless-2016-10-31",
+  "Description": "An AWS Serverless Application.",
+
+  "Resources": {
+
+    "Get": {
+      "Type": "AWS::Serverless::Function",
+      "Properties": {
+        "Handler": "not_required_for_custom_runtime",
+        "Runtime": "provided",
+        "CodeUri": "",
+        "MemorySize": 128,
+        "Timeout": 30,
+		"Policies": ["AWSLambdaBasicExecutionRole"]
+      }
+    }
+  }
+}
