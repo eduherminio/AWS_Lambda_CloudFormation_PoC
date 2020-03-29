@@ -6,7 +6,7 @@ An existing s3 bucket (named `test-lambda-artifact` in this example)
 
 ## Instructions
 
-Install or update Amazon.Lambda.Tools Global Tools
+Install or update Amazon.Lambda.Tools
 
 ```bash
     dotnet tool install -g Amazon.Lambda.Tools
