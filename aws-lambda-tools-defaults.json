@@ -6,12 +6,11 @@
   "profile": "default",
   "region": "eu-west-3",
   "configuration": "Release",
-  "framework": "netcoreapp3.0",
+  "framework": "netcoreapp3.1",
   "template": "serverless.template",
   "function-name": "TestLambda",
   "function-memory-size": 128,
   "function-timeout": 30,
-  "function-runtime": "provided",
-  "function-handler": "not_required_for_custom_runtime",
-  "msbuild-parameters": "--self-contained true"
+  "function-handler": "TestLambda::TestLambda.Functions::ToUpperPlusBookRecommendation",
+  "msbuild-parameters": "/p:PublishReadyToRun=false --self-contained false"
 }

@@ -16,7 +16,7 @@ Install or update Amazon.Lambda.Tools
 Deploy the serverless application
 
 ```bash
-    dotnet lambda deploy-serverless --template-file serverless.template --s3-bucket test-lambda-artifact --stack-name testLambdaStack
+    dotnet lambda deploy-serverless testLambdaStack -t serverless.template -sb test-lambda-artifact
 ```
 
 Test the lambda function
