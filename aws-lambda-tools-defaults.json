@@ -8,9 +8,5 @@
   "configuration": "Release",
   "framework": "netcoreapp3.1",
   "template": "serverless.template",
-  "function-name": "TestLambda",
-  "function-memory-size": 128,
-  "function-timeout": 30,
-  "function-handler": "TestLambda::TestLambda.Functions::ToUpperPlusBookRecommendation",
   "msbuild-parameters": "/p:PublishReadyToRun=false --self-contained false"
 }

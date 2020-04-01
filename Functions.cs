@@ -5,7 +5,7 @@ using System.Net.Http;
 
 [assembly: LambdaSerializer(typeof(Amazon.Lambda.Serialization.Json.JsonSerializer))]
 
-namespace TestLambda
+namespace TestLambdaCF
 {
     public static class Functions
     {

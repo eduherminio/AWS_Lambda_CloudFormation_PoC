@@ -5,10 +5,10 @@
 
   "Resources": {
 
-    "Get": {
+    "TestLambdaCF": {
       "Type": "AWS::Serverless::Function",
       "Properties": {
-        "Handler": "TestLambda::TestLambda.Functions::ToUpperPlusBookRecommendation",
+        "Handler": "TestLambdaCF::TestLambdaCF.Functions::ToUpperPlusBookRecommendation",
         "Runtime": "dotnetcore3.1",
         "CodeUri": "",
         "MemorySize": 128,

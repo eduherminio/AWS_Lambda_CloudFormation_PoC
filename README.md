@@ -16,17 +16,18 @@ Install or update Amazon.Lambda.Tools
 Deploy the serverless application
 
 ```bash
-    dotnet lambda deploy-serverless testLambdaStack -t serverless.template -sb test-lambda-artifact
+    dotnet lambda deploy-serverless testLambdaCFStack -t serverless.template -sb test-lambda-artifact -sp TestLambdaCF/
 ```
 
 Test the lambda function
 
 ```bash
-    dotnet lambda invoke-function -p "Hey!"
+    dotnet lambda list-functions
+    dotnet lambda invoke-function <your_function_name> -p "Hey!"
 ```
 
 Cleanup
 
 ```bash
-    dotnet lambda delete-serverless testLambdaStack
+    dotnet lambda delete-serverless testLambdaCFStack
 ```
